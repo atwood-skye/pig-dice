@@ -23,6 +23,7 @@ body {
 
 #game-row {
   padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 img {
@@ -36,4 +37,8 @@ img {
 
 .red-score {
   color: red;
+}
+
+ul {
+  list-style: none;
 }

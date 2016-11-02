@@ -14,6 +14,18 @@ function changeTurn() {
   }
 }
 
+function newGame() {
+  $("span#player-roll").empty();
+  $("span#turn-score").empty();
+  alert("Game Over!")
+  player1Score = 0;
+  player2Score = 0;
+  $("h4#player1-score").empty();
+  $("h4#player1-score").append(player1Score);
+  $("h4#player2-score").empty();
+  $("h4#player2-score").append(player2Score);
+}
+
 var turnScore = 0;
 
 var player1Score = 0;
@@ -43,8 +55,19 @@ $(document).ready(function() {
       turnScore += randomNumber;
       $("span#turn-score").empty();
       $("span#turn-score").append(turnScore);
+      if (currentTurn === "player1" && turnScore + player1Score >= 100) {
+        player1Score += turnScore
+        alert("Player 1 Wins!");
 
+        newGame();
+      }
+      else if (currentTurn === "player2" && turnScore + player2Score >= 100) {
+        player2Score += turnScore
+        alert("Player 2 Wins!");
+        newGame();
+        changeTurn();
 
+      }
     }
   });
   $("#pass-button").click(function(event) {

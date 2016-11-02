@@ -10,10 +10,17 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row" id="logo">
+        <div class="col-md-12">
+          <div>
+            <img src="img/logo.png">
+          </div>
+        </div>
+      </div>
+      <div class="row" id="game-row">
         <div class="col-md-4">
           <h2>Player 1</h2>
-          <h4 id="player1-score">0</h4>
+          <h1 id="player1-score">0</h1>
         </div>
         <div class="col-md-4">
           <div id="show-dice-number">
@@ -22,12 +29,12 @@
 
           </div>
 
-          <button type="button" name="button" id="roll-button">Roll the dice!</button>
-          <button type="button" name="button" id="pass-button">Pass the Dice!</button>
+          <button type="button" name="button" class="btn btn-danger" id="roll-button">Roll the dice!</button>
+          <button type="button" name="button" class="btn btn-danger" id="pass-button">Pass the dice!</button>
         </div>
         <div class="col-md-4">
           <h2>Player 2</h2>
-          <h4 id="player2-score">0</h4>
+          <h1 id="player2-score">0</h1>
         </div>
 
       </div>

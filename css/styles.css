@@ -1,3 +1,39 @@
 h2 {
   text-decoration: underline;
 }
+
+body {
+  text-align: center;
+  background: url("../img/background.jpg");
+  background-repeat: repeat;
+}
+
+.row {
+  border: 3px solid #ab4646;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#logo {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#game-row {
+  padding-bottom: 50px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+#player2-score {
+  text-decoration: blink;
+}
+
+.red-score {
+  color: red;
+}
